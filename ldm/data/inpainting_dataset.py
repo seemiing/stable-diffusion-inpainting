@@ -158,8 +158,8 @@ if __name__=="__main__":
     de_transform_mask =  transforms.Compose([ transforms.Normalize(mean = [ 0. ],
                                                      std = [ 1/255]),
                     ])
-    csv_file = "data/INPAINTING/example_df.csv"
-    data_root = "data/INPAINTING/custom_inpainting"
+    csv_file = "data/severstal_inpainting/severstal_inpainting.csv"
+    data_root = "data/severstal_inpainting/severstal_inpainting"
     ip_train = InpaintingTrain(csv_file=csv_file,data_root=data_root, size = 256)
     ip_train_loader = DataLoader(ip_train, batch_size=1, num_workers=4,
                           pin_memory=True, shuffle=True)

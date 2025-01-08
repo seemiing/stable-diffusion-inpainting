@@ -14,6 +14,7 @@ venv/*
 
 *.pth
 
+data
 data/samples/output_inpainting_original_paper/*
 data/samples/custom_inpainting/output/*
 data/samples/readme_images/*.mp4

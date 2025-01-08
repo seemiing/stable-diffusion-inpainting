@@ -73,15 +73,15 @@ data:
     train:
       target: ldm.data.inpainting_dataset.InpaintingTrain
       params:
-        csv_file: data/INPAINTING/example_df.csv
-        data_root: data/INPAINTING/custom_inpainting
-        size: 512
+        csv_file: data/severstal_inpainting/severstal_inpainting.csv
+        data_root: data/severstal_inpainting/severstal_inpainting
+        size: 256
     validation:
       target: ldm.data.inpainting_dataset.InpaintingValidation
       params:
-        csv_file: data/INPAINTING/example_df.csv
-        data_root: data/INPAINTING/custom_inpainting
-        size: 512
+        csv_file: data/severstal_inpainting/severstal_inpainting.csv
+        data_root: data/severstal_inpainting/severstal_inpainting
+        size: 256
 
 
 lightning:
